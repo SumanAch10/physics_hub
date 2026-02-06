@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Physics Hub - Learn physics with interactive simulations and visualizations. Explore kinematics, vectors, forces, and more." />
+    <meta name="keywords" content="physics, education, simulations, kinematics, vectors, forces, interactive learning" />
+    <meta name="author" content="Physics Hub" />
+    <meta name="theme-color" content="#0a0e17" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Physics Hub" />
+    <meta property="og:description" content="Learn physics with interactive simulations and visualizations" />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <title>Physics Hub - Interactive Physics Learning</title>
+
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #0a0e17;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #111827;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+
+      /* Range input styling */
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: #1e293b;
+        height: 6px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #22d3ee;
+        cursor: pointer;
+        border: 2px solid #0a0e17;
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #22d3ee;
+        cursor: pointer;
+        border: 2px solid #0a0e17;
+      }
+
+      /* Checkbox styling */
+      input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        accent-color: #22d3ee;
+        cursor: pointer;
+      }
+
+      /* Button focus states */
+      button:focus-visible {
+        outline: 2px solid #22d3ee;
+        outline-offset: 2px;
+      }
+
+      /* Canvas responsive */
+      canvas {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
